@@ -27,7 +27,7 @@ export default async function Intro() {
                 P.S. I love to self-host
             </p>
 
-            <div className="flex items-center justify-center md:justify-start w-full">
+            <div className="flex items-center justify-start w-full">
                 <IconBar />
             </div>
         </div>
