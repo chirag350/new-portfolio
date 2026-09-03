@@ -8,7 +8,7 @@ export default function IconBar() {
     return (
         <>
             <Tooltip id="icon-tooltip" />
-            <ul className="grid grid-rows-4 md:grid-rows-2 grid-cols-6 gap-4 md:gap-6 text-4xl md:text-5xl 2xl:text-6xl mt-6">
+            <ul className="grid grid-rows-2 grid-cols-6 gap-4 md:gap-6 text-4xl md:text-5xl 2xl:text-6xl mt-6">
                 <li><Icon icon="catppuccin:docker" data-tooltip-id="icon-tooltip" data-tooltip-content="Docker" /></li>
                 <li><Icon icon="catppuccin:next" data-tooltip-id="icon-tooltip" data-tooltip-content="Next.js" /></li>
                 <li><Icon icon="catppuccin:javascript-react" data-tooltip-id="icon-tooltip" data-tooltip-content="React" /></li>

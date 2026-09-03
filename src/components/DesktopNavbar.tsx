@@ -14,7 +14,7 @@ const didactGothic = Didact_Gothic({
 
 export default function DesktopNavbar() {
     return (
-        <nav style={saira.style} className="flex w-full fixed z-10 md:px-32 2xl:px-48 md:py-4 2xl:py-8 items-center justify-between p-4 bg-black text-white border-b-amber-600 border-b-2">
+        <nav style={saira.style} className="hidden md:flex w-full fixed z-10 md:px-32 2xl:px-48 md:py-4 2xl:py-8 items-center justify-between p-4 bg-black text-white border-b-amber-600 border-b-2">
             <h1 className="text-2xl md:text-3xl 2xl:text-4xl font-bold">Chirag</h1>
             <div className="flex gap-4 md:gap-8 2xl:gap-12 text-lg md:text-xl 2xl:text-2xl font-semibold" style={didactGothic.style}>
                 <a href="/about" className="hover:text-amber-600 transition-colors duration-300">About</a>
