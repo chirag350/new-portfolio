@@ -39,23 +39,27 @@ export interface WakaTimeActivityResponse {
 }
 
 export default async function fetchHackaTimeStats(): Promise<WakaTimeActivityResponse> {
-    'use cache';
-    cacheLife("minutes")
+  'use cache';
+  cacheLife("minutes")
 
-    // get today's date in YYYY-MM-DD format
-    const today = new Date().toISOString().split('T')[0];
+  // get today's date in YYYY-MM-DD format
+  const today = new Date().toISOString().split('T')[0];
 
-    const r = await fetch(`https://hackatime.hackclub.com/api/hackatime/v1/users/current/stats/last_7_days`, {
-        headers: {
-            Authorization: `Bearer ${process.env.HACKATIME_API_KEY}`,
-        }
-    })
-
-    const data = await r.json();
-
-    if (!r.ok) {
-        throw new Error(`Failed to fetch data from HackaTime API: ${JSON.stringify(data)}`);
+  const r = await fetch(`https://hackatime.hackclub.com/api/hackatime/v1/users/current/stats/last_7_days`, {
+    headers: {
+      Authorization: `Bearer ${process.env.HACKATIME_API_KEY}`,
     }
+  })
 
-    return data as WakaTimeActivityResponse;
+  const data = await r.json();
+
+  if (!r.ok) {
+    return {
+      data: {
+        status: "Error fetching data",
+      }
+    }
+  }
+
+  return data as WakaTimeActivityResponse;
 }
