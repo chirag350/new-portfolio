@@ -13,7 +13,14 @@ export default async function fetchLastFmData(): Promise<Track> {
     })
 
     if (!res.ok) {
-        throw new Error('Failed to fetch data from Last.fm API');
+        return {
+            currentlyPlaying: false,
+            name: "Error fetching data",
+            artist: "Error fetching data",
+            album: "Error fetching data",
+            url: "",
+            image: "",
+        }
     }
 
     const data = await res.json();
