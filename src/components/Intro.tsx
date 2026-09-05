@@ -15,7 +15,7 @@ const didactGothic = Didact_Gothic({
 
 export default async function Intro() {
     return (
-        <div className="flex flex-col items-start justify-center gap-2 2xl:gap-3 w-full">
+        <div className="flex flex-col items-start justify-center gap-2 2xl:gap-3 w-full z-10">
             <h1 className="text-4xl md:text-5xl 2xl:text-6xl font-bold text-white" style={saira.style}>
                 Chirag
             </h1>

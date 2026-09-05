@@ -23,7 +23,7 @@ export default async function Stats() {
     const languages = hackaTimeStats.data?.languages?.filter(x => x.name !== "unknown") || [];
 
     return (
-        <div className="flex flex-col  min-w-[50%] max-w-full rounded-lg overflow-hidden shadow-lg m-4 md:m-12" style={{
+        <div className="flex flex-col  min-w-[50%] max-w-full rounded-lg overflow-hidden shadow-lg m-4 md:m-12 z-10" style={{
             backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 1.0) 0%, rgba(0, 0, 0, 0.9) 60%, rgba(0, 0, 0, 0.8 ) 100%), url('${lastFmData.image}')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',

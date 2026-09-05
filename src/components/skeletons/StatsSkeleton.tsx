@@ -15,7 +15,7 @@ const didactGothic = Didact_Gothic({
 
 export default async function StatsSkeleton() {
     return (
-        <div className="flex flex-col  min-w-[50%] max-w-full rounded-lg overflow-hidden shadow-lg m-4 md:m-12 bg-black/65">
+        <div className="flex flex-col  min-w-[50%] max-w-full rounded-lg overflow-hidden shadow-lg m-4 md:m-12 bg-black/65 z-10">
             {/* VS Code stats from waka time, weekly */}
             <div className="flex flex-col items-start justify-center p-4 md:p-6">
                 <p className="text-sm md:text-md 2xl:text-lg text-gray-500 mb-1" style={didactGothic.style}>
