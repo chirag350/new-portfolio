@@ -18,9 +18,9 @@ export default function IconBar() {
                 <li><Icon icon="catppuccin:tailwind" data-tooltip-id="icon-tooltip" data-tooltip-content="Tailwind CSS" /></li>
                 <li><Icon icon="catppuccin:go" data-tooltip-id="icon-tooltip" data-tooltip-content="Go" /></li>
                 <li><Icon icon="catppuccin:python" data-tooltip-id="icon-tooltip" data-tooltip-content="Python" /></li>
-                <li><Icon icon="catppuccin:nginx" data-tooltip-id="icon-tooltip" data-tooltip-content="Nginx" /></li>
+                <li><Icon icon="selfhst:redis" data-tooltip-id="icon-tooltip" data-tooltip-content="Redis" /></li>
                 <li><Icon icon="catppuccin:drizzle-orm" data-tooltip-id="icon-tooltip" data-tooltip-content="Drizzle ORM" /></li>
-                <li><Icon icon="catppuccin:playwright" data-tooltip-id="icon-tooltip" data-tooltip-content="Playwright" /></li>
+                <li><Icon icon="selfhst:mongodb" data-tooltip-id="icon-tooltip" data-tooltip-content="MongoDB" /></li>
             </ul>
         </>
     )
