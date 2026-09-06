@@ -30,7 +30,7 @@ export default function MobileNavbar() {
             background: isMenuOpen ? "color-mix(in oklab, #000 85%, transparent)" : isOrange ? "linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5) 65%, rgba(217,119,6,0.075) 100%)" : "color-mix(in oklab, #000 85%, transparent)",
         }}>
             <h1 className="text-3xl font-bold" style={saira.style}>Chirag</h1>
-            <Icon icon="material-symbols:menu-rounded" className="text-3xl transition-all duration-300" onClick={handleMenuClick} style={{
+            <Icon icon={isMenuOpen ? "mdi:close" : "mdi:menu"} className="text-3xl transition-all duration-300 east-in-out" onClick={handleMenuClick} style={{
                 rotate: isMenuOpen ? "-90deg" : "0deg",
             }} />
             {/* MEOWWW */}
@@ -38,9 +38,9 @@ export default function MobileNavbar() {
             <div className="absolute top-16 left-0 w-full bg-black text-white flex flex-col items-center justify-center gap-4 py-4 border-b-amber-600 border-b-2 transition-all ease-in-out duration-250" style={{
                 opacity: isMenuOpen ? 0.85 : 0,
             }}>
-                <a href="/about" className="hover:text-amber-600 transition-colors duration-300 text-lg font-semibold" style={didactGothic.style}>About</a>
-                <a href="#projects" className="hover:text-amber-600 transition-colors duration-300 text-lg font-semibold" style={didactGothic.style}>Projects</a>
-                <a href="/contact" className="hover:text-amber-600 transition-colors duration-300 text-lg font-semibold" style={didactGothic.style}>Contact</a>
+                <a href="/about" onClick={handleMenuClick} className="hover:text-amber-600 transition-colors duration-300 text-lg font-semibold" style={didactGothic.style}>About</a>
+                <a href="#projects" onClick={handleMenuClick} className="hover:text-amber-600 transition-colors duration-300 text-lg font-semibold" style={didactGothic.style}>Projects</a>
+                <a href="/contact" onClick={handleMenuClick} className="hover:text-amber-600 transition-colors duration-300 text-lg font-semibold" style={didactGothic.style}>Contact</a>
             </div>
 
         </nav>
