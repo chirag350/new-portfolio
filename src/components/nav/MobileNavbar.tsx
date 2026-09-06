@@ -39,7 +39,7 @@ export default function MobileNavbar() {
                 opacity: isMenuOpen ? 0.85 : 0,
             }}>
                 <a href="/about" className="hover:text-amber-600 transition-colors duration-300 text-lg font-semibold" style={didactGothic.style}>About</a>
-                <a href="/projects" className="hover:text-amber-600 transition-colors duration-300 text-lg font-semibold" style={didactGothic.style}>Projects</a>
+                <a href="#projects" className="hover:text-amber-600 transition-colors duration-300 text-lg font-semibold" style={didactGothic.style}>Projects</a>
                 <a href="/contact" className="hover:text-amber-600 transition-colors duration-300 text-lg font-semibold" style={didactGothic.style}>Contact</a>
             </div>
 

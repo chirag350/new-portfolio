@@ -57,7 +57,7 @@ export default async function Projects() {
     return (
         <div className="flex flex-col items-center justify-center gap-4 2xl:gap-6 w-full mt-4 md:mt-8 z-10 md:p-8">
             <ScrollTrigger />
-            <h2 className="text-3xl md:text-4xl 2xl:text-5xl font-bold text-white" style={saira.style}>
+            <h2 className="text-3xl md:text-4xl 2xl:text-5xl font-bold text-white" id="projects" style={saira.style}>
                 Projects
             </h2>
             {projects.map((project, index) => (
