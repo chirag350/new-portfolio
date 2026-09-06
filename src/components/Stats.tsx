@@ -24,7 +24,7 @@ export default async function Stats() {
 
     return (
         <div className="flex flex-col  min-w-[50%] max-w-full rounded-lg overflow-hidden shadow-lg m-4 md:m-12" style={{
-            backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 1.0) 0%, rgba(0, 0, 0, 0.9) 60%, rgba(0, 0, 0, 0.8 ) 100%), url('${lastFmData.image}')`,
+            backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 1.0) 0%, rgba(0, 0, 0, 0.9) 60%, rgba(0, 0, 0, 0.8 ) 100%), url('${lastFmData.image || "/images/lastfm-placeholder.png"}')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
