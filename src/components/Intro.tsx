@@ -1,5 +1,7 @@
+import { Suspense } from "react";
 import IconBar from "./IconBar";
 import { Saira, Didact_Gothic } from "next/font/google"
+import IconsSkeleton from "@/src/components/skeletons/IconsSkeleton";
 
 const saira = Saira({
   subsets: ["latin"],
@@ -28,7 +30,9 @@ export default async function Intro() {
             </p>
 
             <div className="flex items-center justify-start w-full">
-                <IconBar />
+                <Suspense fallback={<IconsSkeleton />}>
+                    <IconBar />
+                </Suspense>
             </div>
         </div>
     )
