@@ -13,6 +13,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       lang="en"
       className={`h-full antialiased scroll-smooth scroll-pt-16 md:scroll-pt-32 2xl:scroll-pt-40`}
     >
+      <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );
