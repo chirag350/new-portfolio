@@ -22,7 +22,7 @@ const inconsolata = Inconsolata({
 
 export function Project({ project }: { project: Project }) {
     return (
-        <div className="flex flex-col items-around justify-center gap-4 w-5/6 md:w-3/4 mt-4 md:mt-8 z-10 p-4 md:p-8 bg-taupe-950 rounded-md">
+        <div className="flex flex-col items-around justify-center gap-4 w-5/6 md:w-3/4 mt-4 md:mt-8 z-10 p-4 md:p-8 bg-taupe-900/75 shadow-md shadow-taupe-900/75 rounded-md">
             <div className="flex items-center justify-start">
                 <Icon icon={project.icon} className="mr-2 md:mr-4 text-3xl md:text-4xl 2xl:text-5xl" />
                 <h3 className="text-xl md:text-2xl 2xl:text-3xl font-bold text-white text-left" style={saira.style}>
@@ -44,7 +44,7 @@ export function Project({ project }: { project: Project }) {
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-2 py-1 self-end md:self-start md:w-fit bg-taupe-900 hover:bg-taupe-800 text-taupe-400 rounded-md text-md 2xl:text-lg font-semibold transition-colors duration-300 border-taupe-600 border"
+                className="px-2 py-1 self-end md:self-start md:w-fit bg-taupe-900 hover:bg-taupe-800 text-taupe-300/90 rounded-md text-md 2xl:text-lg font-semibold transition-colors duration-300 border-taupe-600 border"
                 style={inconsolata.style}
             >
                 View Project
