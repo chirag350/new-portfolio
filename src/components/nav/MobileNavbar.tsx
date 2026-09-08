@@ -38,9 +38,8 @@ export default function MobileNavbar() {
             <div className="absolute top-16 left-0 w-full bg-black text-white flex flex-col items-center justify-center gap-4 py-4 border-b-amber-600 border-b-2 transition-all ease-in-out duration-250" style={{
                 opacity: isMenuOpen ? 0.85 : 0,
             }}>
-                <a href="/about" onClick={handleMenuClick} className="hover:text-amber-600 transition-colors duration-300 text-lg font-semibold" style={didactGothic.style}>About</a>
                 <a href="#projects" onClick={handleMenuClick} className="hover:text-amber-600 transition-colors duration-300 text-lg font-semibold" style={didactGothic.style}>Projects</a>
-                <a href="/contact" onClick={handleMenuClick} className="hover:text-amber-600 transition-colors duration-300 text-lg font-semibold" style={didactGothic.style}>Contact</a>
+                <a href="#contact" onClick={handleMenuClick} className="hover:text-amber-600 transition-colors duration-300 text-lg font-semibold" style={didactGothic.style}>Contact</a>
             </div>
 
         </nav>

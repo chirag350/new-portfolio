@@ -6,6 +6,8 @@ import Stats from "@/src/components/Stats";
 import { Suspense } from "react";
 import Projects from "@/src/components/Projects";
 import Contact from "@/src/components/Contact";
+import Socials from "@/src/components/Socials";
+import Footer from "@/src/components/Footer";
 
 export default async function Home() {
   return (
@@ -26,8 +28,11 @@ export default async function Home() {
 
         <Contact />
 
+        <hr className="w-3/4 border-amber-600 my-8 h-2 z-10" />
 
-        <hr className="w-3/4 border-taupe-600/50 my-12 h-2 z-10" />
+        <Socials />
+
+        <Footer />
       </main>
     </>
   );
