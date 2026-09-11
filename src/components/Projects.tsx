@@ -32,7 +32,7 @@ const projects: Project[] = [
         name: "Specialty Coffee India Bot",
         description: "An automated web scraper built for the Specialty Coffee India Discord community. It periodically scrapes roaster websites using JSDOM to detect fresh bean drops, publishing new release alerts directly into a dedicated Discord forum channel. It pairs scheduled cron scraping with a search index backed by Drizzle ORM and Neon Postgres to make community coffee discovery instant.",
         shortDescription: "Automated scraper and Discord bot tracking fresh roaster drops and releases for the Specialty Coffee India community.",
-        link: "https://github.com/your-username/your-repo-name",
+        link: "https://www.reddit.com/r/IndiaCoffee/s/anRNZEUjuA",
         toolIcons: ["catppuccin:next", "catppuccin:typescript", "catppuccin:drizzle-orm", "logos:neon-icon", "catppuccin:vercel"],
     },
     {
